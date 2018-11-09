@@ -185,6 +185,8 @@ Item {
         replacements = replacements.replace(/, | ,/g, ",");
 
         var appReplacements = replacements.split(";");
+        
+        title = title.charAt(0).toUpperCase() + title.substr(1);
 
         for (var iReplacement = 0; iReplacement < appReplacements.length; iReplacement++){
 
